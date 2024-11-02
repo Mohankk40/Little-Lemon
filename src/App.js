@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import pages from './utils/pages';
 import Layout from './components/layout/Layout';
+import NotFound from './components/pages/NotFound';
 import UnderConstruction from './components/pages/UnderConstruction'
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
 
           <Route path={pages.get('login').path} 
           element={<UnderConstruction />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </>
