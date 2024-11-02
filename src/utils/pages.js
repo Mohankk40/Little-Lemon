@@ -7,16 +7,16 @@ pages.set('bookings', {
     path: '/bookings', 
     anchorable: true 
   });
-  pages.set('confirmedBooking', { 
+pages.set('confirmedBooking', { 
     name: 'Confirmed Booking', 
     path: '/confirmed-booking', 
     anchorable: false 
   });
-  pages.set('orderOnline', { 
+pages.set('orderOnline', { 
     name: 'Order Online', 
     path: '/order-online', 
     anchorable: true 
   });
-  pages.set('login', { name: 'Login', path: '/login', anchorable: true });
+pages.set('login', { name: 'Login', path: '/login', anchorable: true });
   
-  export default pages;
+export default pages;

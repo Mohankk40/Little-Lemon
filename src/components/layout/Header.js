@@ -16,9 +16,9 @@ const Header = () => {
         <header>
             <nav className="container grid nav-bar">
                 <Link className="nav-bar-logo" to={pages.get('home').path}>
-                    <img src={logoImage} alth="Little Lempn logo" />
+                    <img src={logoImage} alt="Little Lempn logo" />
                 </Link>
-                <button classname="nav-bar-hamburger" type="button" onClick={() => setIsNavExpanded(!isNavExpanded)}>
+                <button className="nav-bar-hamburger" type="button" onClick={() => setIsNavExpanded(!isNavExpanded)}>
                     {isNavExpanded ? <FontAwesomeIcon icon={faXmark} size="2x" /> : <FontAwesomeIcon icon={faBars} size="2x" />}
                 </button>
                 <ul className={isNavExpanded ? 'nav-bar-links expanded' : 'nav-bar-links'}

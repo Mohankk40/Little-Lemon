@@ -1,0 +1,21 @@
+ .under-construction {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   min-height:21.12rem;
+   padding-top: 6rem;
+   text-align: center;
+ }
+
+ @keyframes shiver {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+
+#icon {
+  animation: shiver 0.8s infinite;
+}
