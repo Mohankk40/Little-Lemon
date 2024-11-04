@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import pages from './utils/pages';
 import Layout from './components/layout/Layout';
 import Home from './components/pages/Home';
+import Bookings from './components/pages/Bookings';
+import ConfirmedBooking from './components/pages/Bookings';
 import NotFound from './components/pages/NotFound';
 import UnderConstruction from './components/pages/UnderConstruction'
 
@@ -17,6 +19,11 @@ function App() {
 
           <Route path={pages.get('menu').path} 
           element={<UnderConstruction />} />
+
+          <Route path={pages.get('bookings').path} element={<Bookings />} />
+
+          <Route path={pages.get('confirmedBooking').path}
+          element={<ConfirmedBooking />} />
 
           <Route path={pages.get('orderOnline').path}
           element={<UnderConstruction />} />
